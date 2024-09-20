@@ -55,7 +55,8 @@ const UpdateProductPage = () => {
                         month: "short",
                         day: "2-digit",
                         year: "numeric"
-                    })
+                    }),
+                    quantity: productData?.quantity || 1
                 });
             } else {
                 toast.error("Product not found");
