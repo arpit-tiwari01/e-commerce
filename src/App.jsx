@@ -9,7 +9,7 @@ import Login from "./pages/registration/Login";
 import UserDashboard from "./pages/user/UserDashboard";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AddProductPage from "./pages/admin/AddProductPage";
-import AllProduct from "./pages/allProduct/allProduct";
+import AllProduct from "./pages/allProduct/AllProduct";
 import UpdateProductPage from "./pages/admin/UpdateProductPage";
 import MyState from "./context/myState";
 import { Toaster } from "react-hot-toast";

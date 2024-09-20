@@ -14,7 +14,7 @@ const HomePageProductCard = () => {
   const context = useContext(MyContext);
   const { loading, getAllProduct } = context;
 
-  const cartItems = useSelector((state) => state.card);
+  const cartItems = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
   //add to cart
