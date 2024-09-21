@@ -141,7 +141,9 @@ const CartPage = () => {
                     })}
                   </>
                 ) : (
-                  <h1>Not Found</h1>
+                  <h1
+                  className="text-3xl mt-10 font-bold tracking-tight text-red-400 sm:text-4xl"
+                  >Not Found</h1>
                 )}
               </ul>
             </section>
