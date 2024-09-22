@@ -63,7 +63,7 @@ const HomePageProductCard = () => {
                         E-bharat
                       </h2>
                       <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                        {title.substring(0, 25)}
+                        {title.length > 20 ? title.slice(0, 20) + "..." : title}
                       </h1>
                       <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                         ₹{price}
