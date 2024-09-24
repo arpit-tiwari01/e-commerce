@@ -2,9 +2,14 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import OrderDetails from '../../components/admin/OrderDetails';
 import ProductDetails from '../../components/admin/ProductDetails';
 import UserDetails from '../../components/admin/UserDetails';
+import { useContext } from 'react';
+import MyContext from '../../context/myContext';
 
 const AdminDashboard = () => {
     const user = JSON.parse(localStorage.getItem('users'));
+
+    const context  = useContext(MyContext);
+    const {getAllOrder , getAllProduct} = context;
     return (
         <div>
             {/* Top */}
@@ -63,7 +68,7 @@ const AdminDashboard = () => {
                                         </svg>
 
                                     </div>
-                                    <h2 className="title-font font-medium text-3xl text-pink-400 fonts1" >10</h2>
+                                    <h2 className="title-font font-medium text-3xl text-pink-400 fonts1" >{getAllProduct.length}</h2>
                                     <p className=" text-pink-500  font-bold" >Total Products</p>
                                 </div>
                             </Tab>
@@ -92,7 +97,7 @@ const AdminDashboard = () => {
                                             <path d="M6 18H4c0-1 2-2 2-3s-1-1.5-2-1" />
                                         </svg>
                                     </div>
-                                    <h2 className="title-font font-medium text-3xl text-pink-400 fonts1" >10</h2>
+                                    <h2 className="title-font font-medium text-3xl text-pink-400 fonts1" >{getAllOrder.length}</h2>
                                     <p className=" text-pink-500  font-bold" >Total Order</p>
                                 </div>
                             </Tab>
@@ -129,7 +134,7 @@ const AdminDashboard = () => {
                         <TabPanel>
                             <ProductDetails/>
                         </TabPanel>
-
+f
                         <TabPanel>
                             <OrderDetails/>
                         </TabPanel>
