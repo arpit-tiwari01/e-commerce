@@ -147,7 +147,6 @@ const AdminDashboard = () => {
             <TabPanel>
               <ProductDetails />
             </TabPanel>
-            f
             <TabPanel>
               <OrderDetails />
             </TabPanel>
